@@ -89,6 +89,21 @@ DSH_PROFILE_DIR=/path/to/profile ./install.sh
 The fix takes effect on the **next DSH web session** (immediately if the profile
 has `patchReload: "live"`).
 
+## Install from GitHub
+
+Repo: [`MrGnUm/dsh-image-webp-to-png`](https://github.com/MrGnUm/dsh-image-webp-to-png)
+(private). From any machine with `pnpm`, `git`, and access to the repo — HTTPS
+clone works with the `gh` credential helper (no token prompt):
+
+```bash
+git clone https://github.com/MrGnUm/dsh-image-webp-to-png.git
+cd dsh-image-webp-to-png
+./install.sh            # -> ~/.dsh/profiles/web
+```
+
+Then restart the DSH web session (or it hot-reloads if the profile has
+`patchReload: "live"`). Remove later with `./uninstall.sh`.
+
 ## Verify
 
 Send an **alpha-channel image** (a PNG with transparency) to your `fedotov` model
