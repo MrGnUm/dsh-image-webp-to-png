@@ -1,0 +1,9 @@
+# dsh-image-webp-to-png bundle patch.
+#
+# Registers the WebP->PNG attachment wrapper. No configuration is required; the
+# bundle is fail-open. To disable it, add `enabled: false` to this entry's
+# `config` in the profile's cordis.patch.yml (by id `image-webp-to-png`), or
+# remove the bundle from `dsh.profile.bundles`.
+- insert:
+    - id: image-webp-to-png
+      name: 'dsh-image-webp-to-png'

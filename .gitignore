@@ -1,0 +1,8 @@
+# Build / VCS noise
+node_modules/
+pnpm-lock.yaml
+*.log
+.DS_Store
+
+# Local install backups (install.sh writes these next to package.json)
+package.json.bak-*
